@@ -9,10 +9,10 @@ Actualizado: 04-oct-2026.
 - Repo local (esta carpeta): rama `main`, commit `940d24e`, con historial; remote `origin` = el repo de arriba. Tiene el mismo contenido que GitHub (más los dos jars) pero otra historia.
 
 ## Historial
-- GitHub tiene los commits de la web, no el historial local. Opcional en Git Bash: `git fetch origin && git reset --hard origin/main` (alinear la copia local) o `git push -f origin main` (subir el historial local).
+- GitHub tiene los commits de la web, no el historial local. Para alinear la copia local (Git Bash, en esta carpeta): `git fetch origin && git reset --hard origin/main`. No usar `git push -f`.
 
 ## APK, licencia
-- El APK no está en el repo: se publica en GitHub Releases (v2.1 → FOKUS.apk). `*.apk` en .gitignore.
+- El APK no está en el repo: se publica en GitHub Releases (v2.1 → FOKUS.apk: https://github.com/alexrodri4/cuaderno-de-hierro/releases/tag/v2.1). `*.apk` en .gitignore.
 - Licencia MIT.
 
 ## Secretos (fuera de git, a propósito)
