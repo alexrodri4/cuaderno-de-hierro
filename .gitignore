@@ -9,3 +9,6 @@ android/build/
 # Herramientas grandes (>25 MB / >10 MB): se descargan aparte, ver README
 android/tools/android.jar
 android/tools/d8.jar
+
+# APK compilado: se publica en GitHub Releases
+*.apk

@@ -11,6 +11,10 @@ Actualizado: 04-oct-2026.
 ## Historial
 - GitHub tiene los commits de la web, no el historial local. Opcional en Git Bash: `git fetch origin && git reset --hard origin/main` (alinear la copia local) o `git push -f origin main` (subir el historial local).
 
+## APK, licencia
+- El APK no está en el repo: se publica en GitHub Releases (v2.1 → FOKUS.apk). `*.apk` en .gitignore.
+- Licencia MIT.
+
 ## Secretos (fuera de git, a propósito)
 - `cuaderno-hierro.keystore` y `signing-key-info.txt` están en `.gitignore`.
 - `android/build.sh` ya no lleva la contraseña escrita: la lee de la variable `CDH_KS_PASS` o, si no está, de `signing-key-info.txt`.

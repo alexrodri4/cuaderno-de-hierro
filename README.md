@@ -2,6 +2,8 @@
 
 App de entrenamiento (v2.1, versionCode 20) para Android, construida como WebView sobre una app web autocontenida.
 
+**Descargar el APK:** [Releases](https://github.com/alexrodri4/cuaderno-de-hierro/releases/latest).
+
 ## Estructura
 
 | Ruta | Contenido |
@@ -10,8 +12,7 @@ App de entrenamiento (v2.1, versionCode 20) para Android, construida como WebVie
 | `web/img`, `web/fonts` | Imágenes y tipografías (el APK las toma de aquí) |
 | `android/proj` | Proyecto Android: Java (`MainActivity`, widget, alarmas, pasos), recursos y manifest |
 | `android/tools` | Herramientas de compilación: aapt2 y apksigner (android.jar y d8.jar no están en el repo, ver abajo) |
-| `android/build.sh` | Compila `FOKUS.apk` desde `web/` |
-| `FOKUS.apk` | Último APK compilado y firmado |
+| `android/build.sh` | Compila `FOKUS.apk` desde `web/` (sale en la raíz, ignorado por git) |
 
 ## Compilar
 
@@ -32,3 +33,7 @@ Necesita `cuaderno-hierro.keystore` en la raíz del proyecto. **La keystore y su
 ## IA
 
 La IA solo se activa en el APK, pegando tu clave de API en *Ajustes > Claude*. La clave no se guarda en el repositorio.
+
+## Licencia
+
+MIT, ver [LICENSE](LICENSE).
