@@ -9,7 +9,7 @@ App de entrenamiento (v2.1, versionCode 20) para Android, construida como WebVie
 | `web/index.html` | Código fuente completo de la app (incluye la integración con Claude) |
 | `web/img`, `web/fonts` | Imágenes y tipografías (el APK las toma de aquí) |
 | `android/proj` | Proyecto Android: Java (`MainActivity`, widget, alarmas, pasos), recursos y manifest |
-| `android/tools` | Herramientas de compilación: aapt2, d8, android.jar, apksigner |
+| `android/tools` | Herramientas de compilación: aapt2 y apksigner (android.jar y d8.jar no están en el repo, ver abajo) |
 | `android/build.sh` | Compila `FOKUS.apk` desde `web/` |
 | `FOKUS.apk` | Último APK compilado y firmado |
 
@@ -21,6 +21,11 @@ Linux o WSL, con Java 17+ y Python 3:
 export CDH_KS_PASS='...'   # contraseña de la keystore
 bash android/build.sh
 ```
+
+Antes de compilar, copia en `android/tools/` las dos herramientas que no están en el repo por su tamaño:
+
+- `android.jar` (API 34): de [Sable/android-platforms](https://github.com/Sable/android-platforms) (`android-34/android.jar`).
+- `d8.jar`: del paquete npm [`@drxiaozhi/minapk`](https://www.npmjs.com/package/@drxiaozhi/minapk), o de las build-tools oficiales del Android SDK (`lib/d8.jar`).
 
 Necesita `cuaderno-hierro.keystore` en la raíz del proyecto. **La keystore y su contraseña no están en este repositorio** (ver `.gitignore`): guárdalas aparte, sin ellas no se pueden publicar actualizaciones de la app instalada.
 
