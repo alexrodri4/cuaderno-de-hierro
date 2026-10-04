@@ -1,0 +1,7 @@
+# Clave de firma: NUNCA subir
+*.keystore
+*.jks
+signing-key-info.txt
+
+# Salida de compilación
+android/build/

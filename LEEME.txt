@@ -1,0 +1,12 @@
+FOKUS v2.1 (versionCode 20)
+===========================
+FOKUS.apk                 -> instalar en el movil (actualiza encima, misma firma)
+web/index.html            -> codigo fuente completo (el mismo del artefacto), incluida la IA de Claude
+web/img, web/fonts        -> imagenes y tipografias (unica copia; el APK las toma de aqui)
+android/proj              -> proyecto Android (Java, recursos, manifest)
+android/tools             -> herramientas de compilacion (aapt2, d8, android.jar, apksigner)
+android/build.sh          -> compila FOKUS.apk desde web/ (Linux o WSL, con java 17+ y python3)
+cuaderno-hierro.keystore + signing-key-info.txt -> clave de firma. NO LA PIERDAS: sin ella no puedes actualizar la app instalada.
+
+La IA solo se activa en el APK, al pegar la clave de API en Ajustes > Claude.
+La clave de API NO esta en estos archivos.
